@@ -104,7 +104,12 @@ public class MessageController implements Runnable {
                             
                         // Se a máquina de destino não existir na rede...
                         } else if (nickname.compareToIgnoreCase(destino) == 0){                                
-                            
+                                                          
+                              System.out.println(" maquinanaoexiste");
+                               
+                            // Informa ao usuário que vai liberar o token
+                            System.out.println(" Destinatário da mensagem não localizado nesta rede!");
+                            System.out.println(" TOKEN será liberado...!");
                             // Informa ao usuário que vai liberar o token
                             System.out.println("     Destinatário da mensagem não localizado nesta rede!");
                             System.out.println("     TOKEN será liberado...!");
